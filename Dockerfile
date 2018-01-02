@@ -1,7 +1,7 @@
 FROM ruby:2.2-alpine
 
 RUN apk -U  --no-cache upgrade \
-    --repository http://dl-cdn.alpinelinux.org/alpine/v3.6/main 
+    --repository http://dl-cdn.alpinelinux.org/alpine/v3.6/main \
     --repository http://dl-cdn.alpinelinux.org/alpine/v3.6/community 
     
 RUN apk -U --no-cache add \
@@ -22,5 +22,5 @@ RUN apk -U --no-cache add \
     dbus \
     ttf-freefont \
     udev \
-    --repository http://dl-cdn.alpinelinux.org/alpine/v3.6/main 
+    --repository http://dl-cdn.alpinelinux.org/alpine/v3.6/main \
     --repository http://dl-cdn.alpinelinux.org/alpine/v3.6/community   
